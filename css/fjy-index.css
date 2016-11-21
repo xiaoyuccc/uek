@@ -1,0 +1,228 @@
+html, body,ul, li, h1, h2, h3, h4, h5, h6,dl, dt, dd, ol, form, input, textarea, th, td, select {
+    margin: 0;
+    padding: 0;
+}
+.fjy-top{width:1200px;
+         height:20px;
+         margin:0 auto;
+         padding:30px;
+         margin-bottom:30px;
+}
+.fjy-top a{text-decoration: none;
+            color:#666666;
+}
+.fjy-body{width:1200px;
+		  height:auto;
+		  margin:0 auto;
+		  /*border:1px solid #ccc;*/
+}
+.fjy-gxxy{width:100%;
+		  height:30px;
+           text-align:left;
+           line-height:30px;
+          font-size:24px;
+          /*font-weight:bold;*/
+          margin:30px;
+          /*margin-left:30px;*/
+}
+.fjy-date{width:100%;
+         height:15px;
+         margin-left:30px;
+         color:#999999;
+}
+.fjy-source{color:#666;}
+.fjy-per{width:1140px;
+         height:270px;
+         margin:0 auto;
+          margin-top:30px;
+         border-bottom:1px dotted #ccc;
+}
+.fjy-image{width:241px;
+           height:240px;
+            float:left;
+            border:1px solid #ccc;
+}
+.fjy-message{width:864px;
+             height:240px;
+             margin-left:32px;
+            float:left;
+}
+.fjy-salary{width:800px;
+            height:26px;
+            color: #067ED2;
+            margin-top:20px;
+            font-size:20px;
+}
+.fjy-edu{width:800px;
+         height:120px;
+        margin-top:40px;
+}
+.fjy-design{width:800px;
+            margin-top:12px;
+}
+.fjy-zhuan{padding-left:30px;}
+.fjy-design{font-size:16px;
+            color:#333333;
+            font-weight:bold;
+}
+.fjy-bian{color:#000;
+          font-size: 15px;
+         font-weight:normal;
+}
+/*学员感想*/
+.fjy-feel{width:1140px;
+          height:200px;
+          margin:30px;
+}
+.fjy-title{width:100%;
+            height:22px;
+}
+.fjy-xygx{width:80px;
+          height:26px;
+         float:left;
+         font-size:18px;
+}
+.fjy-xian{margin-left:10px;
+          margin-right:10px;
+         color:#01B5FF;
+         height:12px;
+         float:left;
+}
+.fjy-blo{position:relative;}
+.fjy-pos1{
+    position:absolute;
+    left:0;top:0;
+    margin:0 auto;
+    width: 1200px;
+    display: none;
+    height: 668px;
+	}
+.fjy-eng{width:150px;
+        height:26px;
+        color:#ccc;
+        text-align:left;
+        line-height:26px;
+        float:left;
+}
+.fjy-arc{width:auto;
+         height:130px;
+}
+.fjy-arc p{word-spacing:8px;
+            text-indent:2em;
+           color:#666666;
+            margin-top:25px;
+            font-size:15px;
+}
+/*学员作品*/
+.fjy-zuoping{width:1140px;
+            height:30px;
+            margin:0 auto;
+}
+.fjy-title1{width:100%;
+    height:22px;
+}
+.fjy-xygx1{width:80px;
+    height:26px;
+    float:left;
+    font-size:18px;
+}
+.fjy-xian1{margin-left:10px;
+    margin-right:10px;
+    color:#01B5FF;
+    height:12px;
+    float:left;
+}
+.fjy-eng1{width:150px;
+    height:26px;
+    color:#ccc;
+    text-align:left;
+    line-height:26px;
+    float:left;
+}
+.fjy-works{width:1200px;
+           height:auto;
+}
+.fjy-app{width:1140px;
+         height:42px;
+         margin:0 auto;
+}
+.fjy-appnav{width:400px;
+            height:40px;
+            float:right;
+}
+
+.fjy-hov{width:80px;
+    height:24px;
+    padding-top:3px;
+    margin-left:5px;
+    float:right;
+    text-align:center;
+    list-style: none;
+}
+/*.fjy-pos{width:1200px;*/
+         /*height:700px;*/
+         /*position: relative;*/
+/*}*/
+
+.fjy-hov a{text-decoration: none;
+            color:#333333;
+
+}
+.fjy-hov:hover{border:2px solid transparent;color:#0EB9FF;}
+.fjy-hov:hover{border:2px solid transparent;
+                border-top:2px solid #0EB9FF;
+                color:#0EB9FF;
+}
+.fjy-hov:hover a{color:#0EB9FF;}
+.fjy-blo{width:1200px;
+         height:668px;
+         margin:0 auto;
+}
+.fjy-show {
+    width: 365px;
+    height: 203px;
+    margin-left: 30px;
+    margin-top: 30px;
+    float: left;
+    position: relative;
+}
+.fjy-show img{background-size:100% 100%;}
+/*链接*/
+.fjy-contact{width:1140px;
+             height:48px;
+             margin:0 auto;
+            margin-top:50px;
+}
+.fjy-contact img{border:none;}
+.fjy-share{display: inline;
+           float:left;
+           /*font-size: 16px;*/
+            font-weight:300;
+            margin-top:8px;
+}
+.fjy-four{width:290px;
+          height:48px;
+          float:left;
+          margin-left:10px;
+          list-style:none;
+}
+.fjy-four li{width:45px;
+             height:45px;
+             margin-left:12px;
+             float:left;
+             border-radius:50%;
+}
+.fjy-two{width:126px;
+         height:48px;
+         float:right;
+         list-style:none;
+}
+.fjy-two li{width:41px;
+    height:41px;
+    margin-left:5px;
+    float:right;
+    border-radius:50%;
+}
+.fjy-two span{margin-left:14px;
+             color:#666666;
+}

@@ -1,0 +1,174 @@
+body,html, div, ul, li, h1, h2, h3, h4, h5, h6, p,a, dl, dt, dd, ol, form, input, textarea, th, td, select{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "微软雅黑";
+}
+img{
+    border: none;
+}
+
+/*助学贷款*/
+.hgl-box{
+    width: 1140px;
+    height: auto;
+    padding:0 30px;
+    margin: 0 auto;
+    border-bottom: 1px dashed #666;
+    overflow: hidden;
+}
+.hgl-title{
+    margin-top: 30px;
+    width: 100%;
+    height: 26px;
+}
+.hgl-time{
+    width: 100%;
+    height: 20px;
+    padding-top: 10px;
+    color: #666;
+}
+.hgl-xian{
+    width: 100%;
+    height: 20px;
+    margin: 10px 0;
+}
+.hgl-nr{
+    width: 100%;
+    padding: 20px 0;
+    color: #666;
+}
+.hgl-nr span{
+    display: block;
+    margin-top: 10px;
+}
+.hgl-foot{
+    width: 100%;
+    overflow: hidden;
+}
+.hgl-fx{
+    width: 90%;
+    height: 40px;
+    margin: 10px 0;
+    color: #666;
+    line-height: 50px;
+    float: left;
+}
+.hgl-fx span{
+    float: left;
+}
+.hgl-fx a{
+    margin: 0 10px;
+}
+.hgl-zan{
+    width: 10%;
+    height: 60px;
+    float: right;
+    margin: 10px 0;
+}
+.hgl-zan1,.hgl-zan2{
+    width: 50%;
+    float: left;
+}
+.hgl-zan .top{
+    text-align: center;
+    cursor: pointer;
+}
+.hgl-zan .xia{
+    text-align: center;
+    color: #666;
+}
+
+
+/*网页视屏*/
+.hgl-spbox{
+    width: 1140px;
+    height: auto;
+    padding:0 30px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.hgl-sptitle{
+    margin-top: 30px;
+    width: 100%;
+    height: 45px;
+    font-weight: 100;
+}
+.hgl-sptitle div{
+    font-size: 34px;
+    font-weight: 500;
+}
+.hgl-spbt{
+    margin-top:35px;
+    font-size: 20px;
+    border-left: 4px solid #01b5ff;
+}
+.hgl-spku{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 15px 0;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*flex-direction: row;*/
+    /*justify-content: space-between;*/
+    /*align-content: space-between;*/
+}
+.hgl-p{
+    display: block;
+    width: 262px;
+    height: 212px;
+    float: left;
+    margin: 15px 0;
+}
+.hgl-p2{
+    margin-left: 30px;
+}
+.hgl-p:hover .hgl-zhao{
+    display: block;
+}
+.hgl-tu{
+    display: block;
+    width: 262px;
+    height: 152px;
+    position: relative;
+}
+.hgl-zhao{
+    width: 100%;
+    height: 66px;
+    background: #000;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    line-height: 66px;
+    color: #fff;
+    font-size: 24px;
+    display: none;
+}
+.hgl-zi{
+    width: 262px;
+    height: 60px;
+    background: #f6f6f6;
+}
+.hgl-zi p{
+    height: 20px;
+    padding-top: 10px;
+    color: #000;
+    text-decoration: none;
+}
+.hgl-zdi{
+    padding-top:12px ;
+    height: 18px;
+}
+.hgl-zdi span{
+    font-size: 12px;
+    color: #666;
+}
+.num1{
+    float: left;
+}
+.num2{
+    float: right;
+}

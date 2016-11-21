@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    html, body,  ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+        margin: 0;
+        padding: 0;
+    }
+    .sch-title{
+        width:1200px;
+        height:22px;
+        margin: 0 auto;
+        margin-top: 28px;
+        background: #FAFAFA;
+        text-align: left;
+        line-height: 22px;
+        font-size: 14px;
+        color:#666;
+        font-weight: bold;
+    }
+    .sch-con{
+        width:1200px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .sch-con .sch-gl{
+        box-sizing: border-box;
+        width:300px;
+        height:589px;
+        float: left;
+        border-top:2px solid #C1E68E;
+        border-bottom:1px solid #E8E8E8;
+        border-left:1px solid #E8E8E8;
+        border-right:1px solid #E8E8E8;
+        margin-top: 15px;
+    }
+    .sch-con .sch-gl .bt{
+        width:240px;
+        height:50px;
+        float: left;
+        margin-left: 28px;
+        margin-top: 30px;
+        background: url("images/sch-images/sch-sztd.png");
+        background-position: center;
+    }
+    .sch-con .sch-gl .hx{
+        width:250px;
+        height:8px;
+        float: left;
+        margin-left: 100px;
+        margin:0 auto;
+        background: url("images/sch-images/sch-hx.png");
+        background-position: center;
+    }
+    .sch-con .sch-gl ul{
+        width:232px;
+        height:auto;
+        float: left;
+        margin-left: 44px;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .sch-con .sch-gl ul li .nei{
+        width:165px;
+        height: 95px;
+        float: left;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    .sch-con .sch-gl ul li .nei .nc{
+        width:160px;
+        height:15px;
+        float: left;
+        margin-top: 10px;
+    }
+    .sch-con .sch-gl ul li .nei .nc{
+        background: url("images/sch-images/sch-an1.png")no-repeat;
+        background-size:15px 15px;
+    }
+    .sch-con .sch-gl ul li .nei .nc span{
+        display: block;
+        width:140px;
+        height:15px;
+        float: left;
+        margin-left: 15px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 15px;
+    }
+    .sch-btnbox{
+        width:880px;
+        height:77px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .sch-btnbox .btns{
+        width:736px;
+        height:32px;
+        margin-left: 77px;
+        margin-top: 23px;
+    }
+    .sch-btnbox .btns .btnsleft{
+        width: 516px;
+        height: 32px;
+        float: left;
+    }
+    .sch-btnbox .btns .btnsleft .blo1{
+        width:56px;
+        height:32px;
+        float: left;
+        background: url("images/sch-images/hgl-prev.png");
+        background-size: 100% 100%;
+    }
+    .sch-btnbox .btns .btnsleft .blo2{
+        width:56px;
+        height:32px;
+        float: left;
+        margin-left: 15px;
+        background: url("images/sch-images/hgl-next.png");
+        background-size: 100% 100%;
+    }
+    .sch-btnbox .btns .btnsleft .blt{
+        width:33px;
+        height:32px;
+        float: left;
+        margin-left: 15px;
+        background: url("images/sch-images/hgl-yuan.png");
+        background-size: 100% 100%;
+        text-align: center;
+        line-height:32px;
+        font-size: 14px;
+        color:#000;
+    }
+    .sch-btnbox .btns .btnsleft .slh{
+        width:26px;
+        height:32px;
+        float: left;
+        margin-left: 20px;
+        text-align: center;
+        line-height:32px;
+        font-size: 14px;
+    }
+    .sch-btnbox .btns .btnsright{
+        width: 174px;
+        height: 32px;
+        float: left;
+        margin-left: 40px;
+    }
+    .sch-btnbox .btns .btnsright .tz{
+        width:44px;
+        height:32px;
+        float: left;
+        font-size: 14px;
+        text-align: left;
+        line-height: 32px;
+    }
+    .sch-btnbox .btns .btnsright .ye{
+        width:14px;
+        height:32px;
+        float: left;
+        margin-left: 5px;
+        font-size: 14px;
+        text-align: left;
+        line-height: 32px;
+    }
+    .sch-btnbox .btns .btnsright .kong{
+        width:36px;
+        height:32px;
+        float: left;
+        margin-left: 5px;
+        background: url("images/sch-images/hgl-ye.png");
+        background-size: 100% 100%;
+        border:none;
+        padding-left: 20px;
+    }
+    .sch-btnbox .btns .btnsright .bltgo{
+        width:33px;
+        height:32px;
+        float: left;
+        margin-left: 15px;
+        text-align: center;
+        line-height: 32px;
+        font-size: 12px;
+        color:#000;
+        background: url("images/sch-images/hgl-yuan.png");
+        background-size: 100% 100%;
+    }
+    .sch-gr{
+        width:880px;
+        height:1600px;
+        margin-left: 20px;
+        margin-top: 15px;
+        float: right;
+    }
+    .sch-gr .sch-grc{
+        box-sizing: border-box;
+        width:880px;
+        height:1556px;
+        float: left;
+        border-top:2px solid #C1E68E;
+        border-bottom:1px solid #E8E8E8;
+        border-left:1px solid #E8E8E8;
+        border-right:1px solid #E8E8E8;
+    }
+    .sch-gr .sch-grc .sch-grct{
+        width:820px;
+        height:30px;
+        float: left;
+        margin-left: 28px;
+        margin-top: 30px;
+    }
+    .sch-gr .sch-grc .sch-grct .left{
+        float: left;
+        width:165px;
+        height:30px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 30px;
+        color:#01b5ff;
+    }
+    .sch-gr .sch-grc .sch-grct .right{
+        float: right;
+        width: 310px;
+        height: 30px;
+
+    }
+    .sch-gr .sch-grc .sch-grct .right .wy{
+        width:60px;
+        height:30px;
+        float: left;
+        font-size: 16px;
+        text-align: center;
+        line-height: 30px;
+
+    }
+    .sch-gr .sch-grc .sch-grct .right .xx{
+        width:50px;
+        height:30px;
+        float: left;
+        color:#8A8A8A;
+        font-size: 16px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .sch-gr .sch-grc .sch-grct .right .php{
+        width:30px;
+        height:30px;
+        float: left;
+        color:#8A8A8A;
+        font-size: 16px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .sch-gr .sch-grc .sch-grct .right .qd{
+        width: 120px;
+        height:30px;
+        float: left;
+        color:#8A8A8A;
+        font-size: 16px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .sch-gr .sch-grc .xyzs{
+        width:820px;
+        height: 1425px;
+        float: left;
+        margin-left: 28px;
+        margin-top: 40px;
+    }
+    .sch-gr .sch-grc .xyzsone{
+        width:248px;
+        height:325px;
+        float: left;
+    }
+    .sch-gr .sch-grc .xyzsone .zp{
+        width:230px;
+        height:231px;
+        float: left;
+        background: url(images/sch-images/photo.png);
+    }
+    .sch-gr .sch-grc .xyzsone .mm{
+        width:210px;
+        height:110px;
+        float: left;
+        margin-left: 25px;
+        margin-top: 10px;
+    }
+    .sch-gr .sch-grc .xyzsone .mm .jj{
+        width:108px;
+        height:54px;
+        float: left;
+        border-bottom: 1px dashed #7F7F7F;
+    }
+    .sch-gr .sch-grc .xyzsone .mm .jj .mz{
+        width:62px;
+        height: 20px;
+        float: left;
+        font-size: 18px;
+        color:#626262;
+        font-weight: bold;
+       margin-left:65px;
+    }
+    .sch-gr .sch-grc .xyzsone .mm .jj .zy{
+        width:78px;
+        height: 14px;
+        float: left;
+        margin-top: 9px;
+        font-size: 14px;
+        color:#838383;
+         margin-left:50px;
+    }
+    .sch-gr .sch-grc .xyzsone .mm .yx{
+        width:210px;
+        height: 18px;
+        float: left;
+        margin-top: 9px;
+        font-size: 14px;
+        color:#C3C3C3;
+         margin-left:25px;
+    }
+    .sch-gr .sch-grc .xyzsone .mm .yx.span{
+        width:210px;
+        height: 18px;
+        float: left;
+        margin-top: 9px;
+        font-size: 14px;
+        color:#C3C3C3;
+         /*margin-left:25px;*/
+         margin:0 auto;
+    }
+
+    .sch-gr .sch-grc .xyzsone .mm .gs{
+        width:160px;
+        height: 14px;
+        float: left;
+        margin-top: 50px;
+      margin-left:35px;
+        font-size: 14px;
+        color:#000;
+    }
+
+</style>
+<body>
+   <div class="sch-title">
+       <span style="display: block;float:left;">首页</span><span style="display: block;float:left;margin-left: 10px">></span><span class="gx"style="display: block;float:left;margin-left: 10px;color:#58C5FF;">师资团队</span>
+   </div>
+   <div class="sch-con">
+       <div class="sch-gl">
+           <div class="bt"></div>
+           <div class="hx"></div>
+           <ul class="jyxz">
+               <li>
+                   <span>UI设计</span>
+                  </li>
+               <li style="width:232px;height: 24px;float: left;margin-top: 20px">前端与移动开发培训</li>
+               <li style="width:232px;height: 24px;float: left;margin-top: 12px">PHP培训</li>
+               
+           </ul>
+       </div>
+       <div class="sch-gr">
+           <div class="sch-grc">
+                <div class="sch-grct">
+                    <div class="left">师资团队</div>
+                    <div class="right">
+                        <a href="##"><div class="wy rbtn"style=" color:#01b5ff;border-top: 1px solid #01b5ff;">网页UI</div></a>
+                        <div class="xx">/</div>
+                        <a href="##"><div class="php rbtn">PHP</div></a>
+                        <div class="xx">/</div>
+                        <a href="##"><div class="qd rbtn">前端与移动开发</div></a>
+                    </div>
+                </div>
+               <div class="xyzs">
+                   <a href="##"><div class="xyzsone">
+                       <div class="zp"></div>
+                       <div class="mm">
+                           <div class="jj">
+                               <div class="mz">刘钊</div>
+                               <div class="zy">UI实训组长</div>
+                           </div>
+                           <div class="yx">
+                           <span>从事设计工作六年，曾就</span><br>
+                           <span>职于北京和山西百度公司熟悉</span><br>
+                           <span>用户体验设计和...</span>
+                           </div>
+                           <div class="gs"><img src="images/sch-images/sch-lszp.png" alt=""></div>
+                       </div>
+                   </div>
+                   </a>
+                   <a href="##"><div class="xyzsone" style="margin-left: 38px">
+                       <div class="zp"></div>
+                       <div class="mm">
+                           <div class="jj">
+                              <div class="mz">刘钊</div>
+                               <div class="zy">UI实训组长</div>
+                           </div>
+                           <div class="yx">从事设计工作六年，曾就<br>职于北京和山西百度公司熟悉<br>用户体验设计和...</div>
+                           <div class="gs"><img src="images/sch-images/sch-lszp.png" alt=""></div>
+                       </div>
+                   </div>
+                   </a>
+                   <a href="##"> <div class="xyzsone" style="margin-left: 38px">
+                       <div class="zp"></div>
+                       <div class="mm">
+                           <div class="jj">
+                              <div class="mz">刘钊</div>
+                               <div class="zy">UI实训组长</div>
+                           </div>
+                           <div class="yx">从事设计工作六年，曾就<br>职于北京和山西百度公司熟悉<br>用户体验设计和...</div>
+                           <div class="gs"><img src="images/sch-images/sch-lszp.png" alt=""></div>
+                       </div>
+                   </div></a>
+                   <a href="##"><div class="xyzsone" style="margin-top: 120px">
+                       <div class="zp"></div>
+                       <div class="mm">
+                           <div class="jj">
+                               <div class="mz">刘钊</div>
+                               <div class="zy">UI实训组长</div>
+                           </div>
+                           <div class="yx">从事设计工作六年，曾就<br>职于北京和山西百度公司熟悉<br>用户体验设计和...</div>
+                           <div class="gs"><img src="images/sch-images/sch-lszp.png" alt=""></div>
+                       </div>
+                   </div></a>
+                   <a href="##"><div class="xyzsone" style="margin-left: 38px;margin-top: 120px">
+                       <div class="zp"></div>
+                       <div class="mm">
+                           <div class="jj">
+                              <div class="mz">刘钊</div>
+                               <div class="zy">UI实训组长</div>
+                           </div>
+                           <div class="yx">从事设计工作六年，曾就<br>职于北京和山西百度公司熟悉<br>用户体验设计和...</div>
+                           <div class="gs"><img src="images/sch-images/sch-lszp.png" alt=""></div>
+                       </div>
+                   </div></a>
+                   <a href="##"><div class="xyzsone" style="margin-left: 38px;margin-top: 120px">
+                       <div class="zp"></div>
+                       <div class="mm">
+                           <div class="jj">
+                             <div class="mz">刘钊</div>
+                               <div class="zy">UI实训组长</div>
+                           </div>
+                           <div class="yx">从事设计工作六年，曾就<br>职于北京和山西百度公司熟悉<br>用户体验设计和...</div>
+                           <div class="gs"><img src="images/sch-images/sch-lszp.png" alt=""></div>
+                       </div>
+                   </div></a>
+                   <a href="##"><div class="xyzsone" style="margin-top:120px">
+                       <div class="zp"></div>
+                       <div class="mm">
+                           <div class="jj">
+                              <div class="mz">刘钊</div>
+                               <div class="zy">UI实训组长</div>
+                           </div>
+                           <div class="yx">从事设计工作六年，曾就<br>职于北京和山西百度公司熟悉<br>用户体验设计和...</div>
+                           <div class="gs"><img src="images/sch-images/sch-lszp.png" alt=""></div>
+                       </div>
+                   </div></a>
+                   <a href="##"><div class="xyzsone" style="margin-left: 38px;margin-top: 120px">
+                       <div class="zp"></div>
+                       <div class="mm">
+                           <div class="jj">
+                               <div class="mz">刘钊</div>
+                               <div class="zy">UI实训组长</div>
+                           </div>
+                           <div class="yx">从事设计工作六年，曾就<br>职于北京和山西百度公司熟悉<br>用户体验设计和...</div>
+                           <div class="gs"><img src="images/sch-images/sch-lszp.png" alt=""></div>
+                       </div>
+                   </div></a>
+                   <a href="##"><div class="xyzsone" style="margin-left: 38px;margin-top: 120px">
+                       <div class="zp"></div>
+                       <div class="mm">
+                           <div class="jj">
+                              <div class="mz">刘钊</div>
+                               <div class="zy">UI实训组长</div>
+                           </div>
+                           <div class="yx">从事设计工作六年，曾就<br>职于北京和山西百度公司熟悉<br>用户体验设计和...</div>
+                           <div class="gs"><img src="images/sch-images/sch-lszp.png" alt=""></div>
+                       </div>
+                   </div></a>
+                   <a href="##"><div class="xyzsone" style="margin-top: 120px">
+                      <!--  <div class="zp"></div>
+                       <div class="mm">
+                           <div class="jj">
+                               <div class="mz">刘钊</div>
+                               <div class="zy">UI实训组长</div>
+                           </div>
+                           <div class="yx">从事设计工作六年，曾就<br>职于北京和山西百度公司熟悉<br>用户体验设计和...</div>
+                           <div class="gs"><img src="images/sch-images/sch-lszp.png" alt=""></div>
+                       </div>
+                   </div></a> -->
+                   <a href="##"><div class="xyzsone" style="margin-left: 38px;margin-top: 120px">
+                      <!--  <div class="zp"></div>
+                       <div class="mm">
+                           <div class="jj">
+                              <div class="mz">刘钊</div>
+                               <div class="zy">UI实训组长</div>
+                           </div>
+                           <div class="yx">从事设计工作六年，曾就<br>职于北京和山西百度公司熟悉<br>用户体验设计和...</div>
+                           <div class="gs"><img src="images/sch-images/sch-lszp.png" alt=""></div>
+                       </div>
+                   </div></a> -->
+                   <a href="##"><div class="xyzsone" style="margin-left: 38px;margin-top: 120px">
+                      <!--  <div class="zp"></div>
+                       <div class="mm">
+                           <div class="jj">
+                              <div class="mz">刘钊</div>
+                               <div class="zy">UI实训组长</div>
+                           </div>
+                           <div class="yx">从事设计工作六年，曾就<br>职于北京和山西百度公司熟悉<br>用户体验设计和...</div>
+                           <div class="gs"><img src="images/sch-images/sch-lszp.png" alt=""></div> -->
+                       </div>
+                   </div></a>
+         </div>
+ 			<!-- <div class="mzg-btnbox">
+               <div class="btns">
+                   <div class="btnsleft">
+                       <a href="##"><div class="blo1"></div></a>
+                       <a href="##"><div class="blt "style="background: url(mzg-images/hgl-lan.png)"><span>1</span></div></a>
+                       <a href="##"><div class="blt "><span>2</span></div></a>
+                       <a href="##"><div class="blt "><span>3</span></div></a>
+                       <a href="##"><div class="blt "><span>4</span></div></a>
+                       <a href="##"><div class="blt "><span>5</span></div></a>
+                       <a href="##"><div class="slh ">.....</div></a>
+                       <a href="##"><div class="blt " style="margin-left: 20px"><span>30</span></div></a>
+                       <a href="##"><div class="blt "><span>31</span></div></a>
+                       <a href="##"><div class="blo2"></div></a>
+                   </div>
+                   <div class="btnsright">
+                       <span class="tz">跳转到</span>
+                       <a href="##"> <input type="text" class="kong"></a>
+                       <span class="ye">页</span>
+                       <a href="##"><div class="bltgo">GO</div></a>
+               </div>
+           -->
+        
+           </div>
+       </div>
+   </div>
+
+</body>
+<script src="function.js"></script>
+<script>
+    var btns=$(".blt");
+    for(var i=0;i<btns.length;i++) {
+        btns[i].index = i;
+        btns[i].onclick = function () {
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].style.background = "url(images/sch-images/hgl-yuan.png)";
+                btns[i].style.color = "#000";
+            }
+            this.style.background = "url(images/sch-images/hgl-lan.png)";
+            this.style.color = "#fff";
+        }
+    }
+    var rbtns=$(".rbtn");
+    for(var j=0;j<rbtns.length;j++) {
+        rbtns[j].index = j;
+        rbtns[j].onclick = function () {
+            for (var j = 0; j< rbtns.length; j++) {
+                rbtns[j].style.color="#000"
+                rbtns[j].style.borderTop= "1px solid transparent";
+            }
+            this.style.borderTop = "1px solid #01b5ff";
+            this.style.color = "#01b5ff";
+        }
+    }
+
+
+</script>
+</html>
